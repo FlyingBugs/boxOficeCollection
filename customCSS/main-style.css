@@ -4,10 +4,26 @@
     box-shadow: 3px 2px 1px #eee;
     list-style: outside none none;
 }
-.static-label{width:auto;float:left;text-align:left}
-.label-value{width:auto;float:left;text-align:left}
+.static-label{width:auto;float:left;text-align:left;color:#676767;}
+.label-value{width:auto;float:left;text-align:left;color:#007500}
 
 .jain {
 
 	padding: 10px 10px 10px 10px !important;
 }
+.type-of-movie {
+    float: left;
+    width: 60%;
+margin-bottom:10px;
+}
+.enter-year {
+    float: left;
+    width: 40%;
+margin-bottom:10px;
+}
+.movie-form{
+margin:10px;
+}
+.high-low{width:50%;float:left;margin-top:10px;margin-bottom:10px}
+.earning{width:50%;float:left;margin-top:10px;margin-bottom:10px}
+
