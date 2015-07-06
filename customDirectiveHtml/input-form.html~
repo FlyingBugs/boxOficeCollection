@@ -2,7 +2,7 @@
          Please Enter the year 
          <input  ng-model="formctrl.textrrr.year" type="text" placeholder="Enter the year" ng-focus="tab = 2" required />
 </br>
-Select The type Of Movies : 
+Select The type Of Movies(pls enter hollywood or bollywood only) : 
          <input  ng-model="formctrl.textrrr.type" type="text" placeholder="Enter the type" ng-click="tab = 1" ng-focus="tab = 1" required />
 
 <div ng-show="a.movies">         
