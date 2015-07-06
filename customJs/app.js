@@ -5,6 +5,30 @@ var app = angular.module('bollywood', [
 var textrrr ={};
 var tyty = {};
 var products = {};
+
+// My first Custom Filter
+app.filter('customCurrency', function() { 
+
+  return function(amount, symbol, type) {
+
+    if(isNaN(amount)) {
+      return amount;
+    } else {
+
+      var symbol = symbol || 'INR. ';
+      var type = type === undefined ? 'bollywood' : type;
+
+      if( type === 'bollywood') {
+        return symbol + amount;
+      } else {
+	return amount;
+      }
+
+    }
+  }
+
+});
+
 app.controller('formController',
    function($http, $scope) {
 

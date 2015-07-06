@@ -1,9 +1,7 @@
 <div ng-show="a">These Results are for <strong>{{formctrl.textrrr.type}}</strong> movies of year : <strong>{{formctrl.textrrr.year}}</strong> </div>
 <div class="row"> 
 
-<div class="col-sm-6 one-box" ng-repeat="movie in a.movies">		
-
-00000000 {{movie}}
+<div class="col-sm-6 one-box" ng-repeat="movie in a.movies">
 <table><tr> 
 
 		<Strong>{{$index+1}}. {{movie.movie}}  </strong></br>
