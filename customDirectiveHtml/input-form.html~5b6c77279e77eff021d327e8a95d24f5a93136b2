@@ -1,35 +1,37 @@
+<div class="movie-form">
 <form name="formInput" ng-submit="formInput.$valid && formctrl.callApi(formctrl.textrrr.type,formctrl.textrrr.year,formctrl.textrrr.field,formctrl.textrrr.order, this, formctrl.textrrr.check)" novalidate>
-         Please Enter the year 
-         <input  ng-model="formctrl.textrrr.year" type="text" placeholder="Enter the year" ng-focus="tab = 2" required />
-</br>
+ <div class="enter-year">        Please Enter the year 
+         <input  ng-model="formctrl.textrrr.year" type="text" placeholder="Enter the year" ng-focus="tab = 2" required /></div>
+
+<div class="type-of-movie">
 Select The type Of Movies(pls enter hollywood or bollywood only) : 
          <input  ng-model="formctrl.textrrr.type" type="text" placeholder="Enter the type" ng-click="tab = 1" ng-focus="tab = 1" required />
-
+</div>
 <div ng-show="a.movies">         
-</br> Wanna Sort your result..??<input ng-model="formctrl.textrrr.check" type="checkbox" value="true" />Yes
+ Do you want to sort your results ..??<input ng-model="formctrl.textrrr.check" type="checkbox" value="true" />Yes
 <div ng-show="formctrl.textrrr.check">
-{{formctrl.textrrr.check}}
-</br>please select the sort field:
+<!--{{formctrl.textrrr.check}}-->
+<div class="earning">Please select the sort field:
          <select ng-model="formctrl.textrrr.field"  >
             <option value="lifetime">LifeTime Earning</option>
             <option value="openingweek">Openingweek Earning</option>
             <option value="openingweekend">Openingweekend Earning</option>
             <option value="openingday">Openingday Earning</option>
-         </select>
-         </br>
-         please select the sort order:
+         </select></div>
+         <div class="high-low">
+        Please select the sort order:
          <select ng-model="formctrl.textrrr.order" >
             <option value="asc">Low to High</option>
             <option value="desc">High to Low</option>
          </select>
-         </br>
+         </div>
 </div>
 
 </div>
-         <input type="submit" value="Submit"/>
+         <input type="submit" value="Submit" class="btn btn-primary"/>
 
 </form>
-
+</div>
 <cite ng-show="tab === 2 && !a" ></br>Result for year : <strong>{{formctrl.textrrr.year}}</strong> !!</cite>
 <div ng-show="tab === 1 && !a" > And for {{formctrl.textrrr.type}} movies..</div>
          <cite ng-show="formctrl.textrrr.field"></br>Sort By : <strong>{{formctrl.textrrr.field}}</strong>!</cite>

@@ -21,7 +21,7 @@ app.controller('formController',
 
 if (sortReq == true && (typeof field == 'undefined' || typeof order == 'undefined') ) {
             alert('pls select sort field and order  !!');
-            
+            return;
          }
          var urlString =
             'https://udayogra-box-office-report-v1.p.mashape.com/getmovies?&type='+type+'&order=' +
