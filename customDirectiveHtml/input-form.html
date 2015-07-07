@@ -2,6 +2,7 @@
    <form name="formInput" ng-submit="formInput.$valid && formctrl.callApi(formctrl.textrrr.type,formctrl.textrrr.year,formctrl.textrrr.field,formctrl.textrrr.order, this, formctrl.textrrr.check)" novalidate>
       <div class="enter-year">        Please Enter the year 
          <input  ng-model="formctrl.textrrr.year" type="text" placeholder="Enter the year" ng-focus="tab = 2" required />
+	 <increment-value ng-model="formctrl.textrrr.year" ></increment-value>
       </div>
       <div class="type-of-movie">
          Select The type Of Movies(pls enter hollywood or bollywood only) : 
